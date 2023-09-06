@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* STEP -4- AND FINALLY */
+  font-family: var(--font-lemonada);
+}
+
+.background1 {
+  background-image: url("../public/bg1.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.background2 {
+  background-image: url("../public/line-bg2.png");
+  background-position: center;
+  background-color: #f6f7ff;
+}
+/* .background3 {
+  background-image: url("../public/line-bg2.png");
+  background-position: center;
+} */
+select:hover,
+input:hover {
+  cursor: pointer;
+}
+
+/* ============ CLASSES ADDED TO TAILWIND CSS=========== */
+@layer base {
+  .title {
+    @apply text-slate-700 text-3xl mb-3 drop-shadow-lg shadow-black;
+  }
+  .paragraph {
+    @apply leading-8 text-gray-500 mb-4 mr-14;
+  }
+  .rounded-input {
+    @apply border-slate-300 border-2 rounded-full p-3 px-5 outline-blue-400;
+  }
+}
